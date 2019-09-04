@@ -36,7 +36,7 @@ public class HellowController {
     @RequestMapping("/hello")
     public CityModel hello(){
         ArrayList<CityModel> arrayList = exampleService.queryDate();
-        System.err.println("result :  "+arrayList.get(20));
+        System.err.println("result:"+arrayList.get(20));
         CityModel cityModel = arrayList.get(0);
         return cityModel;
         //return  "static/hello3";
