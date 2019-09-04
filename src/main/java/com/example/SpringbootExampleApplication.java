@@ -14,6 +14,7 @@ public class SpringbootExampleApplication extends SpringBootServletInitializer {
 
         SpringApplication.run(SpringbootExampleApplication.class, args);
         System.out.println(
+
                 "ヾ(◍°∇°◍)ﾉﾞ    bootdo启动成功      ヾ(◍°∇°◍)ﾉﾞ\n" +
                         " ______                    _   ______            \n" +
                         "|_   _ \\                  / |_|_   _ `.          \n" +
