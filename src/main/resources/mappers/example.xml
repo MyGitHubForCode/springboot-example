@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.springbootexample.dao.ExampleDao">
+
+
+    <resultMap id="BaseResultMap" type="com.example.springbootexample.domain.CityModel">
+        <id column="ID" property="id" jdbcType="INTEGER"/>
+        <result column="Name" property="name" jdbcType="VARCHAR"/>
+        <result column="CountryCode" property="countryCode" jdbcType="VARCHAR"/>
+        <result column="District" property="district" jdbcType="VARCHAR"/>
+        <result column="Population" property="population" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,`Name`,CountryCode,District,Population
+    </sql>
+    <select id="queryDate" resultType="com.example.springbootexample.domain.CityModel">
+        select <include refid="Base_Column_List"></include> from city
+    </select>
+
+</mapper>
